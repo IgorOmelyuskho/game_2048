@@ -1,0 +1,50 @@
+<!DOCTYPE html">   <!-- <!DOCTYPE html>Есть разница -->
+<head>
+	<title>2048</title>
+    <link href="styles.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<script src="script.js"></script>
+</head>
+
+<body id='body' onkeydown="keyDown(event)" onkeyup="keyUp(event)">
+	
+	<div id='modal-overlay'>
+		<div id='modal-form'>
+			<span id='modal-text'>sometext</span>
+			<div id='modal-close'>close</div>
+		</div>
+	</div>
+	
+	<div id='wrapper'>
+		<div id='mainDiv'>
+			
+			<header>
+				<div id="id2048">2048</div>
+				<div id="mainScore">
+					<div id="scoreString" class="text-align-center">Score</div>
+					<div id="scoreValue" class="text-align-center">0</div>
+					<div id="deltaScore"></div>
+				</div>	
+				<div id="mainRecord">
+					<div id="recordString" class="text-align-center">Record at field 4x4</div>
+					<div id="recordValue" class="text-align-center">0</div>
+				</div>		
+			</header>
+			
+			<div id="backgroundDiv"></div>
+			
+			<footer>
+				<button onclick="newGame(event)">New Game</button>
+				<button id="minus" class="plus-minus" onclick="changeSize(event)">-</button>
+				<div id="chooseFieldSize">
+					<div id="text" class="text-align-center">Choose field size</div>
+					<div id="fieldSize" class="text-align-center">4x4</div>
+				</div>
+				<button id="plus" class="plus-minus" onclick="changeSize(event)">+</button>
+			</footer>
+			
+		</div>
+	</div>
+	
+	
+</body>				
