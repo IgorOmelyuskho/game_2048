@@ -8,9 +8,10 @@ body{
 	//background:red;
 }
 
-#mainDiv{
+#mainDiv{  
 	//background:green;
 	transform-origin: 50% 0%;
+	font-size: inherit;
 }
 
 header{
